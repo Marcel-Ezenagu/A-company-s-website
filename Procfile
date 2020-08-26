@@ -1,1 +1,1 @@
-web: gunicorn website.wsgi --error-logfile/--log-file
+web: gunicorn website.wsgi

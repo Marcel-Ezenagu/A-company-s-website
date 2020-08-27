@@ -7,11 +7,11 @@ def product_index(request):
 	context = {
 		'products': products
 		}
-	return render(request, 'product_index.html', context)
+	return render(request, 'products/product_index.html', context)
 	
 def product_detail(request, pk):
 	product = Product.objects.get(pk=pk)
 	context = {
 		'product': product
 		}
-	return render(request, 'product_detail.html', context)
+	return render(request, 'products/product_detail.html', context)
